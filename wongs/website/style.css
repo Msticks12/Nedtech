@@ -1,0 +1,326 @@
+body{
+  font: 15px/1.5 Arial, Helvetica,sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #f4f4f4;
+}
+
+.whatsapp-btn-container{
+    position: fixed;
+    right: 30px;
+    opacity: 0;
+    animation: fade-up 1000ms forwards;
+    animation-delay: 1000ms;
+}
+
+@keyframes fade-up{
+    100%{
+        bottom: 24px;
+        opacity: 1;
+    }
+}
+
+.whatsapp-btn-container .whatsapp-btn {
+    font-size: 48px;
+    color: #25d366;
+    display: inline-block;
+    transition: all 400ms;
+}
+/* Global */
+.container{
+    width: 88%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.button_1{
+    height: 38px;
+    background: gold;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+}
+
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+/* Header */
+header{
+    background: black;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: gold  3px solid;
+    
+}
+
+.miracle img{
+    width: 88%;
+    height: 500px;
+    padding: 0 20px 0 73px;
+    margin-top: 10px;
+}
+
+
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 5;
+}
+
+header img{
+    width: 15%;
+   position: relative;
+   left: 20vh;
+   bottom: 9.5vh;
+}
+
+header nav{
+    float: right;
+    margin-top: 15px;
+}
+
+header .highlight, header .current a{
+    color: gold;    
+    font-weight: bold;
+}
+
+
+header a:hover{
+    color: gold;
+    font-weight: bold;
+}
+
+
+a{
+
+    text-decoration: none;
+    color: inherit;
+}
+
+/* showcase */
+#showcase{
+    min-height: 400px;
+    background: url('../website/yeye.jpeg')no-repeat;
+    background-size: 500px;
+    background-size: cover;
+    text-align: center;
+    color: #ffffff;
+}
+
+#showcase h1{
+    margin-top: 10px;
+    font-size: 49px;
+    margin-bottom: -10px;
+}
+
+#showcase p{
+ font-size: 20px; 
+}
+
+/* Follow */
+
+#Follow{
+    padding: 15px;
+    color: #ffffff;
+    background: black;
+}
+
+
+#Follow h1{
+    float:left;
+}
+
+#Follow a{
+    float: right;
+    margin-top: 15px;
+    font-size: 15px;
+}
+
+
+
+/* Boxes */
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 90px;
+}
+
+
+/* Services */
+ul#services li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+    background: #e6e6e6;
+    float: center;
+    width: 200%;
+
+}
+
+/* Sidebar */
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    width: 90%;
+    padding: 5px;
+}
+
+
+/* Main-col */
+article#main-col{
+    float: left;
+    width: 65%;
+}
+
+
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: #ffffff;
+    background-color: gold;
+    text-align: center;
+}
+
+/* button */
+.btn{
+    background-color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000;
+    padding: 10px 40px;
+    border-radius: 5000px;
+    transition: transform 0.3s;
+}
+
+.btn:hover{
+    transform: scale(1.15);
+}
+
+
+
+
+/* Media Queries */
+@media(max-width: 768px){
+    header #branding,
+    header nav,
+    header nav li,
+    header img,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    #Follow h1,Q
+    #Follow a,
+    .miracle,
+    article#main-col,
+    ul#services li,
+    aside#sidebar{
+        float:none;
+        text-align: center;
+        width: 100%;
+    }
+
+header{
+    padding-bottom: 20px;
+}
+
+header img{
+    width: 10%;
+    height: -10%;
+    padding: 20px;
+}
+
+#showcase h1{
+    margin-top: 40px;
+}
+
+#newsletter button{
+    display: block;
+    width: 100%;
+    float: left;
+    padding-left: 50px;
+}
+
+#newsletter form input[type="email"]{
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#Follow h1{
+    margin-top: 5px;
+    width: 100%;
+}
+
+#Follow a{
+    margin-top: 3px;
+    padding: 5px;
+    width: 50%;
+    float: right;
+}
+
+.btn{
+    display: block;
+}
+
+ul#services li{
+    width: 70%;
+    float: center;
+}
+
+.miracle img{
+    width: 70%;
+    height: 400px;
+}
+
+
+
+
+}
+
+
+
+
+
